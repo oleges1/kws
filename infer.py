@@ -87,5 +87,5 @@ if __name__ == '__main__':
                         help='path to audio to infer on')
     args = parser.parse_args()
     with open(args.config, 'r') as f:
-        config = edict(yaml.safe_load(stream))
+        config = edict(yaml.safe_load(f))
     infer(config, args.weights_path, args.audio, config.get('inference', {}).get('T', 50))
