@@ -1,0 +1,16 @@
+train:
+  seed: 42
+  lr: 4.e-5
+  batch_size: 32
+  max_epochs: 15
+  gpus: 1
+model:
+  in_channels: 42
+  hidden_size: 16
+  dropout: 0.1
+  cnn_layers: 2
+  rnn_layers: 2
+  kernel_size: 9
+  num_classes: 3
+inference:
+  T: 50
