@@ -18,7 +18,7 @@ def train(config):
         dropout=config.model.get('dropout', 0.1),
         cnn_layers=config.model.get('cnn_layers', 2),
         rnn_layers=config.model.get('rnn_layers', 2),
-        kernel_size=config.model.get('kernel_size' 9)
+        kernel_size=config.model.get('kernel_size', 9)
     )
     model = AttentionNet(
         crnn,
